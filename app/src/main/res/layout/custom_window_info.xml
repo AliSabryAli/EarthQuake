@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="12dp"
+        app:cardUseCompatPadding="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Background"
+            android:padding="6dp">
+
+            <ImageView
+                android:id="@+id/iconInfoID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mark"
+                android:tint="@color/Foreground" />
+
+            <TextView
+                android:id="@+id/winTitleID"
+                style="@style/TitleTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iconInfoID"
+                android:padding="4dp"
+                android:text="Title" />
+
+            <TextView
+                android:id="@+id/winMagnID"
+                style="@style/ContentTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/winTitleID"
+                android:layout_toRightOf="@id/iconInfoID"
+                android:paddingLeft="4dp"
+                android:text="magnitued" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/winMagnID"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/winMagnID"
+                android:background="@android:color/transparent"
+                android:text="More info"
+                android:textColor="@color/colorAccent" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

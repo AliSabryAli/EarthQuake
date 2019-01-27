@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">EarthQuake</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_details_maps">Map</string>
+</resources>
